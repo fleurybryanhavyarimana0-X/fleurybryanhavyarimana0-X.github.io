@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Fleury-Bryan Havyarimana - product and delivery lead, Montréal. Product case studies.">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Fleury-Bryan Havyarimana - product lead, Canada. Design case study, product case studies and code.">
 <title>Fleury-Bryan Havyarimana · Product Case Studies</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -55,6 +55,8 @@ h1 span{color:var(--signal)}
 .proj p{margin:0;font-size:15px;line-height:1.5}
 .proj span{font-family:var(--mono);font-size:12px;color:var(--muted)}
 .note a{color:var(--steel)}
+.proj.feature{border-color:var(--signal);padding:24px}
+.proj.feature h3{font-family:var(--display);font-size:22px;font-weight:750;color:var(--ink)}
 footer{border-top:1px solid var(--line);padding-top:22px;display:grid;gap:10px;font-size:15px;color:var(--muted)}
 footer .contact{font-family:var(--mono);font-size:14px;color:var(--ink);user-select:all}
 .note{font-size:14px;color:var(--muted);max-width:66ch}
@@ -64,10 +66,10 @@ footer .contact{font-family:var(--mono);font-size:14px;color:var(--ink);user-sel
 
 <div class="wrap">
 <header>
-  <div class="eyebrow">Product case studies · 2019–2026</div>
+  <div class="eyebrow">Product design &amp; delivery · 2019–2026</div>
   <h1>Software for people who work <span>on site</span>, not at a desk.</h1>
-  <p class="lede">I'm Fleury-Bryan Havyarimana, a product and delivery lead based in Montréal. For eleven years I have shaped and shipped platforms used by plant crews, clinicians, partners and engineering squads. Each case below shows the messy starting point, how I framed it, what we shipped, and what happened after launch.</p>
-  <div class="meta"><span><b>Montréal, QC</b></span><span>English / Français</span><span>Canadian citizen</span><span>C#/.NET · Python · Azure · AWS</span></div>
+  <p class="lede">I'm Fleury-Bryan Havyarimana, a product lead based in Canada who designs and builds. For eleven years I have shaped and shipped platforms used by plant crews, clinicians, partners and engineering squads. Each case below shows the messy starting point, how I framed it, what we shipped, and what happened after launch.</p>
+  <div class="meta"><span><b>Canada</b></span><span>English / Français</span><span>Canadian citizen</span><span>C#/.NET · Python · Azure · AWS</span></div>
 </header>
 
 <div class="principles" aria-label="How I work">
@@ -76,9 +78,19 @@ footer .contact{font-family:var(--mono);font-size:14px;color:var(--ink);user-sel
   <div><h3>Design the hand-over</h3><p>Runbooks, training and adoption tracking are part of the product, not an afterthought.</p></div>
 </div>
 
+<section class="projects" aria-label="Featured design case study">
+  <div class="eyebrow">Featured design case study</div>
+  <a class="proj feature" href="https://fleurybryanhavyarimana0-x.github.io/fieldops-design/"><h3>FieldOps: one alert, two people, two screens</h3><p>A dispatcher dashboard (web) and an in-cab driver app (mobile) for yard and fleet operations, on one shared design system. Problem framing, users, key decisions, accessibility and working front-end code.</p><span>Product design · design system · web + mobile · HTML/CSS/JS</span></a>
+  <div class="proj-grid">
+    <a class="proj" href="https://fleurybryanhavyarimana0-x.github.io/fieldops-design/dispatch.html"><h3>Dispatch board</h3><p>Severity-ordered action queue, fleet table and asset detail. Keyboard accessible.</p><span>Live prototype</span></a>
+    <a class="proj" href="https://fleurybryanhavyarimana0-x.github.io/fieldops-design/driver.html"><h3>Driver app</h3><p>One message, one large action, pre-trip checklist sized for gloves.</p><span>Live prototype</span></a>
+  </div>
+</section>
+
 <section class="projects" aria-label="Code">
   <div class="eyebrow">Code</div>
   <div class="proj-grid">
+    <a class="proj" href="https://github.com/fleurybryanhavyarimana0-X/fieldops-design"><h3>fieldops-design</h3><p>Design tokens (light and dark), component sheet and the two FieldOps screens. No build step.</p><span>Design system · CSS tokens · JavaScript</span></a>
     <a class="proj" href="https://github.com/fleurybryanhavyarimana0-X/fleet-telemetry-pipeline"><h3>fleet-telemetry-pipeline</h3><p>Python. Validates, de-duplicates and orders vehicle and equipment telemetry, then computes trip metrics and idle, speeding and overheat alerts. Tested with pytest.</p><span>Python · pytest · IoT data</span></a>
     <a class="proj" href="https://github.com/fleurybryanhavyarimana0-X/release-readiness-api"><h3>release-readiness-api</h3><p>C# / .NET 8 minimal API that turns readiness checks and risks into a go/no-go decision with named blockers. xUnit unit and integration tests, Docker image.</p><span>C# · .NET 8 · xUnit · Docker</span></a>
   </div>
