@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Fleury-Bryan Havyarimana - product and delivery lead, Montréal. Product case studies.">
+<title>Fleury-Bryan Havyarimana · Product Case Studies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a field logbook — narrow reading column, each case study is a numbered site entry with a constraint strip */
+:root{
+  --bg:#f3f4f1; --surface:#ffffff; --ink:#18201c; --muted:#5b665f; --line:#d5dad3;
+  --signal:#d9750f; --signal-ink:#7a3d00; --steel:#2f5d62;
+  --display:"Archivo",system-ui,sans-serif; --body:"Source Serif 4",Georgia,serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121614; --surface:#1a201d; --ink:#e7ebe6; --muted:#9aa59e; --line:#2c3530;
+  --signal:#f0953a; --signal-ink:#ffd2a3; --steel:#7fb3b8; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121614; --surface:#1a201d; --ink:#e7ebe6; --muted:#9aa59e; --line:#2c3530;
+  --signal:#f0953a; --signal-ink:#ffd2a3; --steel:#7fb3b8; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:860px;margin:0 auto;padding-block:56px 72px;display:grid;gap:56px}
+header{display:grid;gap:18px}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+h1{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:clamp(34px,6vw,58px);line-height:1.02;margin:0;text-wrap:balance}
+h1 span{color:var(--signal)}
+.lede{font-size:19px;max-width:62ch;margin:0;color:var(--ink)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:500}
+.principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.principles div{background:var(--surface);padding:18px 20px;display:grid;gap:6px;min-width:0}
+.principles h3{font-family:var(--display);font-size:15px;font-weight:700;margin:0;letter-spacing:.01em}
+.principles p{margin:0;font-size:15px;color:var(--muted);line-height:1.5}
+.case{display:grid;gap:18px;border-top:2px solid var(--ink);padding-top:22px}
+.case-head{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:baseline}
+.num{font-family:var(--display);font-stretch:75%;font-weight:800;font-size:44px;line-height:1;color:var(--signal)}
+.case h2{font-family:var(--display);font-stretch:105%;font-weight:750;font-size:clamp(22px,3.2vw,28px);line-height:1.15;margin:0;text-wrap:balance}
+.where{grid-column:2;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.strip{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--mono);font-size:12px;padding:4px 9px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.chip.c{border-color:var(--signal);color:var(--signal-ink)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 32px}
+.grid section{min-width:0}
+.grid h4{font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin:0 0 6px;color:var(--steel)}
+.grid p,.grid ul{margin:0;font-size:16px}
+.grid ul{padding-left:18px;display:grid;gap:4px}
+.after{background:var(--surface);border-left:4px solid var(--signal);padding:14px 18px;font-size:16px}
+.after b{font-family:var(--display);font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--signal-ink);display:block;margin-bottom:4px}
+footer{border-top:1px solid var(--line);padding-top:22px;display:grid;gap:10px;font-size:15px;color:var(--muted)}
+footer .contact{font-family:var(--mono);font-size:14px;color:var(--ink);user-select:all}
+.note{font-size:14px;color:var(--muted);max-width:66ch}
+@media (max-width:640px){.grid{grid-template-columns:1fr}.num{font-size:36px}body{font-size:16px}}
+</style>
+</head><body>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Product case studies · 2019–2026</div>
+  <h1>Software for people who work <span>on site</span>, not at a desk.</h1>
+  <p class="lede">I'm Fleury-Bryan Havyarimana, a product and delivery lead based in Montréal. For eleven years I have shaped and shipped platforms used by plant crews, clinicians, partners and engineering squads. Each case below shows the messy starting point, how I framed it, what we shipped, and what happened after launch.</p>
+  <div class="meta"><span><b>Montréal, QC</b></span><span>English / Français</span><span>Canadian citizen</span><span>C#/.NET · Python · Azure · AWS</span></div>
+</header>
+
+<div class="principles" aria-label="How I work">
+  <div><h3>Start on the floor</h3><p>Constraints come from the people doing the work: shift windows, clinical calendars, settlement cycles.</p></div>
+  <div><h3>Ship in waves</h3><p>Release to one site, squad or partner first, learn, then reuse the improved template.</p></div>
+  <div><h3>Design the hand-over</h3><p>Runbooks, training and adoption tracking are part of the product, not an afterthought.</p></div>
+</div>
+
+<article class="case">
+  <div class="case-head"><div class="num">01</div><h2>A shared platform for fifteen industrial sites</h2><div class="where">AIM Recycling · Montréal · 2023–2024 · Infrastructure Architect & Project Manager</div></div>
+  <div class="strip"><span class="chip c">Plants can't stop production</span><span class="chip c">Regulatory reporting must not break</span><span class="chip">15 sites</span><span class="chip">Site-wave rollout</span></div>
+  <div class="grid">
+    <section><h4>The problem</h4><p>Each plant ran its own spreadsheets, databases and equipment telemetry. Leadership could not compare sites, and every change risked interrupting production or regulatory reporting.</p></section>
+    <section><h4>How I framed it</h4><p>I built the business case and a site-wave roadmap with plant managers and finance: baseline, target outcomes and a budget per wave. I scheduled each cut-over around production plans with operations.</p></section>
+    <section><h4>What shipped</h4><ul><li>One documented data model on AWS replacing site-specific tools</li><li>Event-driven ingestion of equipment data (Kafka, MQTT, Kinesis) into S3</li><li>Site-by-site schedules and status views shared by leadership and plant managers</li></ul></section>
+    <section><h4>Working with users</h4><p>Change management with site managers and staff: procedures, training and adoption tracking for every wave, so plant teams could run the platform on their own.</p></section>
+  </div>
+  <div class="after"><b>After launch</b>Lessons from each wave went into the next wave's templates, so later sites reused the improved process and avoided earlier issues. Migrations never interrupted plant activity or regulatory reporting.</div>
+</article>
+
+<article class="case">
+  <div class="case-head"><div class="num">02</div><h2>Hospital systems that fit around clinical calendars</h2><div class="where">Montreal Heart Institute · 2024–2025 · Cloud Architecture Consultant & Project Manager</div></div>
+  <div class="strip"><span class="chip c">Clinical downtime windows only</span><span class="chip c">PHIPA & Quebec Law 25</span><span class="chip">HL7 FHIR</span><span class="chip">Bilingual</span></div>
+  <div class="grid">
+    <section><h4>The problem</h4><p>The hospital needed new Azure application, identity and data-protection capabilities without disrupting care, and every release had to satisfy privacy officers as well as clinicians.</p></section>
+    <section><h4>How I framed it</h4><p>I set deliverables and acceptance criteria with department heads and the IT committee, presenting options, risks and costs in French and English before each decision.</p></section>
+    <section><h4>What shipped</h4><ul><li>Releases timed to clinical downtime windows</li><li>HL7 FHIR interfaces and Azure services, accepted against security evidence</li><li>Access controls, encryption and data classification checked before go-live</li></ul></section>
+    <section><h4>Working with users</h4><p>I adapted technical material for clinicians, researchers, privacy officers and executives, and documented decisions and follow-ups after every meeting.</p></section>
+  </div>
+  <div class="after"><b>After launch</b>We tracked data availability, data quality, integration reliability and user adoption, and reported each indicator with its owner. Bilingual runbooks, training and a closure report let the internal team run the systems safely afterwards.</div>
+</article>
+
+<article class="case">
+  <div class="case-head"><div class="num">03</div><h2>One platform standard for forty development squads</h2><div class="where">Desjardins · 2024 · Program Manager, Multi-Squad Delivery</div></div>
+  <div class="strip"><span class="chip c">Squads move at different speeds</span><span class="chip">40+ internal teams</span><span class="chip">Open Banking APIs</span></div>
+  <div class="grid">
+    <section><h4>The problem</h4><p>More than forty squads needed a secure CI/CD platform and the Open Banking API roadmap, but each team had its own priorities and could not wait for a central team.</p></section>
+    <section><h4>How I framed it</h4><p>I treated the squads as internal customers: platform work was prioritized by value and dependency, and each release was tied to outcomes for advisors and fintech partners.</p></section>
+    <section><h4>What shipped</h4><ul><li>A delivery roadmap for the Open Banking API platform</li><li>Reference patterns, onboarding guides and runbooks</li><li>A dependency board and remediation burn-down leadership could read at a glance</li></ul></section>
+    <section><h4>Working with users</h4><p>Bilingual adoption workshops and regular follow-ups with squad leads, with documented actions after each session.</p></section>
+  </div>
+  <div class="after"><b>After launch</b>Squads adopted one platform standard without waiting on the central team. Vendor performance and outstanding exposure were reviewed with leadership at every increment.</div>
+</article>
+
+<article class="case">
+  <div class="case-head"><div class="num">04</div><h2>Partner integrations people could actually build against</h2><div class="where">Global Payments · 2021–2022 · DevOps Integrator & Technical Project Lead</div></div>
+  <div class="strip"><span class="chip c">PCI DSS change control</span><span class="chip c">Settlement cycles fixed</span><span class="chip">Merchant-facing APIs</span></div>
+  <div class="grid">
+    <section><h4>The problem</h4><p>Third-party and merchant integrations kept failing on inconsistent requirements, while every change had to stay traceable for payment-industry assessors.</p></section>
+    <section><h4>How I framed it</h4><p>I turned partner requirements into integration scope, API specifications and acceptance criteria, with consistent authentication, error handling and message formats.</p></section>
+    <section><h4>What shipped</h4><ul><li>Specifications and test conditions shared with each partner</li><li>Release-readiness and change-advisory sessions with clear owners</li><li>Traceable records for every certificate, WAF and network change</li></ul></section>
+    <section><h4>Working with users</h4><p>Release schedules and status reports let product, compliance and operations follow every cycle. I escalated early, with options, around merchant commitments.</p></section>
+  </div>
+  <div class="after"><b>After launch</b>I documented the causes of partner connectivity failures for operations and handed over evidence procedures, so audit evidence could be produced quickly after each project closed.</div>
+</article>
+
+<article class="case">
+  <div class="case-head"><div class="num">05</div><h2>Marketplace features ranked by what partners reported</h2><div class="where">Sherweb · 2019–2020 · Cloud Engineer & Technical Project Lead</div></div>
+  <div class="strip"><span class="chip c">Multi-tenant isolation</span><span class="chip">Managed-service providers across North America</span><span class="chip">Microsoft 365</span></div>
+  <div class="grid">
+    <section><h4>The problem</h4><p>A cloud marketplace used by managed-service providers needed new features and Azure environments without weakening tenant data separation.</p></section>
+    <section><h4>How I framed it</h4><p>With product owners I defined scope and acceptance criteria so each feature delivered measurable value to partners and could be tested objectively.</p></section>
+    <section><h4>What shipped</h4><ul><li>Partner-platform features and Azure environment builds</li><li>Release notes and bilingual summaries for business stakeholders</li><li>Features checked against ISO 27001 and GDPR before release</li></ul></section>
+    <section><h4>Working with users</h4><p>Design reviews, Scrum ceremonies and release-readiness meetings, plus direct follow-up with Microsoft partner contacts on partner-facing issues.</p></section>
+  </div>
+  <div class="after"><b>After launch</b>I proposed fixes from support and telemetry data, so the problems partners reported most often were fixed first and did not return in later releases.</div>
+</article>
+
+<footer>
+  <div>Contact</div>
+  <div class="contact">fleury.dryan.havyarimana@gmail.com · 438-467-7656</div>
+  <div class="contact">linkedin.com/in/fleury-bryan-h-a7a21320b</div>
+  <p class="note">Client screens and data are confidential, so these case studies describe the problems, decisions and outcomes rather than reproducing internal interfaces.</p>
+</footer>
+</div>
+</body></html>
